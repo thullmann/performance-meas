@@ -1,0 +1,10 @@
+name: presplinesshinyapp
+title:
+username: thullmann
+account: thullmann
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12581215
+bundleId: 9895927
+url: https://thullmann.shinyapps.io/presplinesshinyapp/
+version: 1
