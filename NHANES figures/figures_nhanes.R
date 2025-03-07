@@ -81,6 +81,7 @@ plot_graphabstract = ggplot(explanation_data, aes(age, bmi)) +
   my_theme() +
   scale_x_continuous(breaks = scales::breaks_pretty(n = 12)) +
   scale_color_manual(values = colors, breaks = c("ground truth", "fractional polynomials", "B-splines df=3", "B-splines df=15")) +
-  theme(legend.position = "none", axis.text.x = element_blank(), axis.text.y = element_blank()) + xlab("X") + ylab("Y")
+  theme(legend.position = "none", axis.title.y = element_text(angle = 90),
+        axis.text.x = element_blank(), axis.text.y = element_blank()) + xlab("X") + ylab("Y")
 ggsave(paste0("figures/graphabstract.pdf"), plot = plot_graphabstract, dpi = 600, width = 17, height = 9, units = "cm")
 
